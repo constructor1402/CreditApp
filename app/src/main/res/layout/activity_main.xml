@@ -1,0 +1,109 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simuladores"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:background="@android:color/holo_red_dark"
+            android:padding="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crédito Hipotecario en Colombia"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:background="@android:color/white"
+            android:padding="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="* Valor de la propiedad"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etValorPropiedad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="100.000.000"
+            android:background="@android:color/white"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="* ¿Cuánto necesitas?"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etMontoCredito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="70.000.000"
+            android:background="@android:color/white"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="* ¿A qué plazo necesitas el crédito (años)?"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etPlazo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="5"
+            android:background="@android:color/white"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="* ¿A qué tasa de interés efectiva anual (TAE)?"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etTasaInteres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="14.03"
+            android:background="@android:color/white"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btnSimular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simular Crédito"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
